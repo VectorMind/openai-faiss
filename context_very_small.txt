@@ -1,0 +1,6 @@
+This is a text extract from https://www.homesmartmesh.com/
+
+it consists of the first section 'Netowrks' but 'Frameworks, Applications, Assistans' have been omitted
+
+# Networks
+Ethernet and wifi being used by most generic consumer devices is very convenient and is used wherever it is possible. Even smaller devices with relatively low power such as ESP32 can use wifi, which solves all communication questions and can even provide a webserver hosted on the microcontroller. Usage of websocket allow browsers and webapps such as Home 3D to be independent from proxy servers which increases the flexibility of the client servers architecture and allows clients to run on any device (Smartphone / PC : mac, win,linux). MQTT lowers the application overhead in comparison to REST API and solves all communication scenarios with client polling and server based events notification.
