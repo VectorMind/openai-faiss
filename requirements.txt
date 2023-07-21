@@ -4,3 +4,4 @@ python-dotenv
 faiss-cpu
 openai
 tiktoken
+beautifulsoup4
