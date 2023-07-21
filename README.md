@@ -1,6 +1,18 @@
 # streamlit-openai-faiss
 Lang chain example using open AI and FAISS
 
+# openai_faiss.py
+* https://platform.openai.com/docs/guides/embeddings
+* https://platform.openai.com/docs/api-reference/embeddings
+
+
+# app.py
+* streamlit for ui
+* langchain
+    * Character Text Splitter
+    * Open AI Embeddings (text-embedding-ada-002-v2)
+    * Open AI LLM (text-davinci)
+    * FAISS vector store
 ## very small example
 
 * uploaded file [context_very_small.txt](./context_very_small.txt)
@@ -17,6 +29,18 @@ Successful Requests: 1
 Total Cost (USD): $0.005679999999999999
 ```
 
+account usage
+```text
+text-embedding-ada-002-v2, 3 requests
+348 prompt + 0 completion = 348 tokens
+
+text-davinci, 1 request
+240 prompt + 44 completion = 284 tokens
+```
+
+Pricing as of 21.07.2023
+* Embeddings : Ada v2	$0.0001 / 1K tokens
+
 ## references
 - https://github.com/alejandro-ao/langchain-ask-pdf/tree/main
-
+- https://openai.com/pricing
