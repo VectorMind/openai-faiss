@@ -3,6 +3,9 @@ from langchain.text_splitter import CharacterTextSplitter
 from dotenv import load_dotenv
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
+from langchain.chains.question_answering import load_qa_chain
+from langchain.llms import OpenAI
+from langchain.callbacks import get_openai_callback
 
 st.header("Content Question")
 st.write("Enter text")
@@ -40,10 +43,10 @@ references = knowledge_base.similarity_search(question)
 st.header("Result")
 st.write(references)
 
-#llm = OpenAI()
-#chain = load_qa_chain(llm, chain_type="stuff")
-#with get_openai_callback() as cb:
-#    response = chain.run(input_documents=references, question=user_question)
-#    print(cb)
-#    
-#st.write(response)
+llm = OpenAI()
+chain = load_qa_chain(llm, chain_type="stuff")
+with get_openai_callback() as cb:
+    response = chain.run(input_documents=references, question=question)
+    print(cb)
+    
+st.write(response)
