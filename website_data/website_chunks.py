@@ -191,8 +191,8 @@ def convert_all_text_to_chunks():
     return
 
 if __name__ == "__main__":
-    #sitemap_to_urls_list()
-    #files_list_to_map()
-    #export_html()
-    #convert_all_html_to_text()
+    sitemap_to_urls_list()
+    files_list_to_map()
+    export_html()
+    convert_all_html_to_text()
     convert_all_text_to_chunks()
