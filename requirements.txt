@@ -5,3 +5,4 @@ faiss-cpu
 openai
 tiktoken
 beautifulsoup4
+jupyterlab
