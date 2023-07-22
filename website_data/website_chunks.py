@@ -99,7 +99,7 @@ def files_list_to_map():
     for url in url_list:
         hashed_name = hashlib.md5(url.encode()).hexdigest()[:10]
         files_map[hashed_name] = url
-    save_json('export/files_map.json',files_map)
+    save_json('export/files_info.json',files_map)
 
 def chunk_text(encoding,text, max_tokens = 7800):
     words = text.split()
