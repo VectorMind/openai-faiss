@@ -1,5 +1,5 @@
-# streamlit-openai-faiss
-Lang chain example using open AI and FAISS
+# openai-faiss
+experimenting with openAI and FAISS for custom content question answering
 
 # Notebooks
 
