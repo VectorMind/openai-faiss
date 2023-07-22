@@ -1,12 +1,20 @@
 # streamlit-openai-faiss
 Lang chain example using open AI and FAISS
 
-# openai_faiss.py
+# Notebooks
+
+* [langchain.ipynb](langchain.ipynb) simple example of custom chunks question answering with langchain
+* [website_chunks.ipynb](website_chunks.ipynb) creating text chunks from all pages taken from sitemap
+* [question_chunks.ipynb](question_chunks.ipynb) extracting relevant chunks to the question and feeding them as context. although it is much easier to use langchain the goal of this notebook is to explore the native openai and FAISS without the langchain abstraction
+
+# Python scripts
+## openai_faiss.py
 * https://platform.openai.com/docs/guides/embeddings
 * https://platform.openai.com/docs/api-reference/embeddings
 
+this script only goes up to embeddings extraction, the full process is covered by [website_chunks.ipynb](website_chunks.ipynb)
 
-# app.py
+## langchain_streamlit.py
 * streamlit for ui
 * langchain
     * Character Text Splitter
